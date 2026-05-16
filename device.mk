@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/lenovo/A3500
+LOCAL_PATH := device/huawei/y360
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
@@ -38,4 +38,4 @@ PRODUCT_COPY_FILES_OVERRIDES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := A3500
+PRODUCT_NAME := y360

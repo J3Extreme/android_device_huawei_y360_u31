@@ -15,11 +15,11 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/lenovo/A3500/device.mk)
+$(call inherit-product, device/huawei/y360/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := A3500
-PRODUCT_NAME := omni_A3500
-PRODUCT_BRAND := Lenovo
-PRODUCT_MANUFACTURER := LENOVO
-PRODUCT_MODEL := A3500
+PRODUCT_DEVICE := y360
+PRODUCT_NAME := omni_y360
+PRODUCT_BRAND := Huawei
+PRODUCT_MANUFACTURER := HUAWEI
+PRODUCT_MODEL := y360

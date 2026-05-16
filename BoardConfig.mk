@@ -16,7 +16,7 @@
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := A3500
+TARGET_BOOTLOADER_BOARD_NAME := y360
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6582
@@ -33,9 +33,9 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/lenovo/A3500/kernel
+TARGET_PREBUILT_KERNEL := device/huawei/y360/kernel
 BOARD_KERNEL_CMDLINE := 
-BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/A3500/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/y360/mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --base 0x10000000 --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 
 # Partitions & Image
@@ -53,10 +53,10 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # TWRP-Specific
-TARGET_RECOVERY_FSTAB := device/lenovo/A3500/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/huawei/y360/recovery/root/etc/twrp.fstab
 BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-DEVICE_RESOLUTION := 800x1280
+DEVICE_RESOLUTION := 800x480
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
